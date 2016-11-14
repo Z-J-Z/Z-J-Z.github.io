@@ -1,0 +1,39 @@
+# Site settings
+title: Z-J-Z
+description: 'Welcom to my GitHub Home£¡'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/Z-J-Z/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Z-J-Z'
+  email: 838889863@qq.com
+  twitter_username: Z-J-Z
+  facebook_username: Z-J-Z
+  github_username:  Z-J-Z
+  linkedin_username:  Z-J-Z
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
